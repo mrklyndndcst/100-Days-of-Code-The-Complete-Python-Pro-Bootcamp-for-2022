@@ -1,6 +1,7 @@
 from importlib.resources import path
 import os
 
+# enter day title here ↓↓↓
 day = "D019 Intermediate - Instances, State and Higher Order Functions"
 foldername = ""
 
