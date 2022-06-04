@@ -5,7 +5,7 @@ import os
 level = ''
 foldername = ""
 # enter day title here ↓↓↓
-day = "Section 20: Day 20 - Intermediate - Build the Snake Game Part 1: Animation & Coordinates"
+day = "Section 21: Day 21 - Intermediate - Build the Snake Game Part 2: Inheritance & List Slicing"
 
 day_number = [int(word) for word in day.split() if word.isdigit()][0]
 
@@ -17,8 +17,24 @@ elif "Intermediate" in day:
   split_string = day.split("- Intermediate - ", 1)
   project_title = split_string[1]
   level = "Intermediate"
+elif "Web Foundation" in day:
+  split_string = day.split("- Web Foundation - ", 1)
+  project_title = split_string[1]
+  level = "Web_Foundation"
+elif "Intermediate+" in day:
+  split_string = day.split("- Intermediate+ ", 1)
+  project_title = split_string[1]
+  level = "Intermediate+"
+elif "Advanced" in day:
+  split_string = day.split("- Advanced - ", 1)
+  project_title = split_string[1]
+  level = "Advanced"
+elif "Professional Portfolio Project" in day:
+  split_string = day.split("- Professional Portfolio Project - ", 1)
+  project_title = split_string[1]
+  level = "Professional_Portfolio_Project"
 else:
-  print('edit program')
+  print('edit day title')
 
 foldername += f"D{day_number:03}_"
 
