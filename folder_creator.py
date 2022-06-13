@@ -5,7 +5,7 @@ import os
 level = ''
 foldername = ""
 # enter day title here ↓↓↓
-day = "Section 22: Day 22 - Intermediate - Build Pong: The Famous Arcade Game"
+day = "Section 23: Day 23 - Intermediate - The Turtle Crossing Capstone Project"
 
 day_number = [int(word) for word in day.split() if word.isdigit()][0]
 
