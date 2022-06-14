@@ -5,7 +5,7 @@ import os
 level = ''
 foldername = ""
 # enter day title here ↓↓↓
-day = "Section 24: Day 24 - Intermediate - Files, Directories and Paths"
+day = "Section 25: Day 25 - Intermediate - Working with CSV Data and the Pandas Library"
 
 day_number = [int(word) for word in day.split() if word.isdigit()][0]
 
