@@ -19,7 +19,7 @@
 
 import pandas
 
-data = pandas.read_csv("Intermediate/D025_Working_with_CSV_Data_and_the_Pandas_Library/weather_data.csv")
+# data = pandas.read_csv("Intermediate/D025_Working_with_CSV_Data_and_the_Pandas_Library/weather_data.csv")
 
 # data_dict = data.to_dict()
 # print(data_dict)
@@ -43,8 +43,8 @@ data = pandas.read_csv("Intermediate/D025_Working_with_CSV_Data_and_the_Pandas_L
 # # get data from max temp 
 # print(data[data.temp == max_temp])
 
-monday = data[data.day == "Monday"]
-print(int(monday.temp))
+# monday = data[data.day == "Monday"]
+# print(monday.condition)
 
 # monday_temp_F = int(monday.temp) * 1.8 + 32
 # print(monday_temp_F)
@@ -56,15 +56,15 @@ print(int(monday.temp))
 # data = pandas.DataFrame(data_dict)
 # data.to_csv("new_data.csv")
 
-# data = pandas.read_csv("Intermediate/D025_Working_with_CSV_Data_and_the_Pandas_Library/2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv")
-# gray = len(data[data["Primary Fur Color"] == "Gray"])
-# black = len(data[data["Primary Fur Color"] == "Black"])
-# cinnamon = len(data[data["Primary Fur Color"] == "Cinnamon"])
+data = pandas.read_csv("Intermediate/D025_Working_with_CSV_Data_and_the_Pandas_Library/2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv")
+gray = len(data[data["Primary Fur Color"] == "Gray"])
+black = len(data[data["Primary Fur Color"] == "Black"])
+cinnamon = len(data[data["Primary Fur Color"] == "Cinnamon"])
 
-# data_dict = {
-#   "Fur Color": ["Gray", "Black", "Cinnamon"],
-#   "Count": [gray, black, cinnamon],
-# }
+data_dict = {
+  "Fur Color": ["Gray", "Black", "Cinnamon"],
+  "Count": [gray, black, cinnamon],
+}
 
-# new_data = pandas.DataFrame(data_dict)
-# new_data.to_csv("squirrel_count.csv")
+new_data = pandas.DataFrame(data_dict)
+new_data.to_csv("squirrel_count.csv")

@@ -16,9 +16,7 @@ turtle.shape(image)
 
 # turtle.mainloop()
 
-
 data = pd.read_csv("Intermediate/D025_Working_with_CSV_Data_and_the_Pandas_Library/us-states-game-start/50_states.csv")
-
 
 correct = []
 correct_guesses = 0
@@ -37,6 +35,13 @@ while run == True:
       correct_answer.goto(x, y)
       correct_answer.write(i, align="center", font=10)
       correct.append(correct_answer)
-      correct_guesses += 1
+      correct_guesses += 11
+  if correct_guesses == 50:
+    run = False
+    end = turtle.Turtle()
+    end.penup()
+    end.hideturtle()
+    end.goto(0, 0)
+    end.write("Done", align="center", font=30)
 
 turtle.exitonclick()
